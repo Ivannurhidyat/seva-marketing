@@ -11,6 +11,7 @@ export default {
       },
       backgroundImage: {
         'gradient-custom': 'linear-gradient(256.72deg, #F939E4 24.19%, #329BEE 69.88%)',
+        'gradient-image-card': 'linear-gradient(212.23deg, rgba(250, 110, 197, 0.82) 26.81%, rgba(50, 155, 238, 0.82) 81.8%)',
       },
     },
     fontFamily: {
