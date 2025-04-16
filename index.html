@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seva Marketing</title>
+  <!--Jonsuh hamburger-->
+  <link rel="stylesheet" href="public/css/hamburgers.css">
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--Css-->
+  <link rel="stylesheet" href="public/css/style.css">
+  <!--Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <!--HEADER-->
+  <header class="sticky top-0 bg-dark px-4 py-10 ">
+    <nav class="container mx-auto flex items-center  mt-2 sm:mt-4">
+      <div class="logo py-1"><img src="public/assets/logo.svg" class="w-32 md:w-auto" alt=""></div>
+      <ul class="menu flex flex-1 justify-end items-center gap-10 md:gap-12 2xl:gap-14 text-white uppercase text-lg 2xl:text-2xl absolute md:static sm:top-40 top-32 z-10 left-0 flex-col md:flex-row md:w-auto w-full">
+        <li class="w-full text-center md:w-auto"><a href="#">HOME</a></li>
+        <li class="w-full text-center md:w-auto"><a href="#">PORTOFOLIO</a></li>
+        <li class="w-full text-center md:w-auto"><a href="#">ABOUT</a></li>
+        <li class="w-full text-center md:w-auto"><a href="#">TEAMS</a></li>
+        <li class="w-full text-center md:w-auto"><a href="#">CONTACT</a></li>
+      </ul>
+      <div class="flex md:hidden flex-1 justify-end">
+        <button class="hamburger hamburger--squeeze" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner bg-white before:bg-white after:bg-white"></span>
+          </span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!--HERO-->
+  <section class="hero pt-1 px-4 relative ">
+    <div class="container mx-auto grow items-center">
+      <div>
+        <div class=" items-start md:w-1/2 w-auto mb-5">
+          <p class="xl:text-xl lg:text-lg sm:text-lg text-base">
+            We <strong><u><i>accelerate</i></u></strong> your brand’s <strong><u><i>growth</i></u></strong> with data-driven marketing, advertising, and digital solutions. <br> From strategy to execution, we deliver real results.
+          </p>
+        </div>
+        <div class="items-center mb-24 font-primary font-bold xl:text-9xl sm:text-8xl text-5xl">
+          <h1 class="2xl:ml-28 xl:ml-10 2xl:text-start xl:text-start md:text-start text-center">
+            <i>Nurturing brands</i>
+          </h1>
+          <h1 class="text-center font-bold">
+            <i class="bg-gradient-to-r from-blue-500 to-pink-500 bg-clip-text text-transparent inline-block">
+              <span class="block">Leveraging</span>
+              <span class="block">impact</span>
+            </i>
+          </h1>
+        </div>
+        <div class="flex items-center justify-center">
+          <a href="#" class="rounded-full flex flex-col items-center justify-center sm:w-20 sm:h-20 w-14 h-14 sm:text-base text-xs border-2 border-white hover:bg-gray-800 text-center leading-none">
+            <i class="fa-solid fa-arrow-down mb-1"></i>
+            Explore<br>More
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="absolute top-4 right-0 z-[-1]">
+      <img src="public/assets/hero-background-top-right.png" alt="" class="w-[577px] h-[533px]">
+    </div>
+    <div class="absolute bottom-0 left-0 z-[-1]">
+      <img src="public/assets/hero-background-buttom-left.png" alt="" class="w-[577px] h-[533px]">
+    </div>
+  </section>
+
+  <script src="public/js/script.js"></script>
+</body>
+</html>
