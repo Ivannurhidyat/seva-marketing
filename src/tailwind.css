@@ -18,6 +18,8 @@
       -o-transform: scale(1);
       transform-origin: right;
       opacity: 0;
+      pointer-events: none;
+      visibility: hidden;
       transition: all 0.3s ease-in-out;
       -webkit-transition: all 0.3s ease-in-out;
       -moz-transition: all 0.3s ease-in-out;
@@ -32,6 +34,8 @@
       -ms-transform: scale(1);
       -o-transform: scale(1);
       opacity: 1;
+      pointer-events: auto;
+      visibility: visible;
     }
   }
 }
