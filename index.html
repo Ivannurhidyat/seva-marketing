@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,12 +21,12 @@
   <header class="sticky top-0 bg-dark z-40 shadow-md">
     <nav class="container mx-auto flex items-center py-5 px-8">
       <div class="logo md:z-auto z-50"><a href="#"><img src="public/assets/logo.svg" class="w-32 md:32" alt=""></a></div>
-      <ul class="menu flex flex-1 md:justify-end justify-center items-center md:gap-12 2xl:gap-14 text-white uppercase text-lg 2xl:text-xl absolute md:static bg-dark sm:top-32 top-0 z-20 left-0 flex-col md:flex-row md:w-auto w-full md:min-h-0 min-h-screen divide-dark divide-y-2 md:divide-y-0 space-y-7 md:space-y-0">
-        <li class="w-full text-center md:w-auto"><a href="#" class="block md:inline py-2 md:py-0">HOME</a></li>
-        <li class="w-full text-center md:w-auto"><a href="#" class="block md:inline py-2 md:py-0">PORTOFOLIO</a></li>
-        <li class="w-full text-center md:w-auto"><a href="#" class="block md:inline py-2 md:py-0">ABOUT</a></li>
-        <li class="w-full text-center md:w-auto"><a href="#" class="block md:inline py-2 md:py-0">TEAMS</a></li>
-        <li class="w-full text-center md:w-auto"><a href="#" class="block md:inline py-2 md:py-0">CONTACT</a></li>
+      <ul class="menu flex flex-1 md:justify-end justify-center items-center md:gap-12 2xl:gap-14 text-white uppercase text-lg 2xl:text-xl absolute md:static bg-dark top-0 z-20 left-0 flex-col md:flex-row md:w-auto w-full md:min-h-0 min-h-screen divide-dark divide-y-2 md:divide-y-0 space-y-7 md:space-y-0">
+        <li class="w-full text-center md:w-auto"><a href="#" class="underline-animation nav-link py-2 md:py-0">HOME</a></li>
+        <li class="w-full text-center md:w-auto"><a href="#portfolio" class="underline-animation nav-link py-2 md:py-0">PORTOFOLIO</a></li>
+        <li class="w-full text-center md:w-auto"><a href="#about" class="underline-animation nav-link py-2 md:py-0">ABOUT</a></li>
+        <li class="w-full text-center md:w-auto"><a href="#teams" class="underline-animation nav-link py-2 md:py-0">TEAMS</a></li>
+        <li class="w-full text-center md:w-auto"><a href="#contact" class="underline-animation nav-link py-2 md:py-0">CONTACT</a></li>
       </ul>
       <div class="flex md:hidden flex-1 justify-end md:z-auto z-50">
         <button class="hamburger px-0 py-0 hamburger--squeeze" type="button">
@@ -44,7 +44,7 @@
         <div>
           <div class=" items-start 2xl:w-1/3 xl:w-2/5 lg:w-1/2 md:w-4/6 sm:w-4/5 w-auto xl:pb-6 sm:pb-14 pb-10">
             <p class="xl:text-xl lg:text-lg sm:text-lg text-xl">
-              We <strong><u><i>accelerate</i></u></strong> your brand’s <strong><u><i>growth</i></u></strong> with data-driven marketing, advertising, and digital solutions. <br> From strategy to execution, we deliver real results.
+              We <strong><u><i>accelerate</i></u></strong> your brand's <strong><u><i>growth</i></u></strong> with data-driven marketing, advertising, and digital solutions. <br> From strategy to execution, we deliver real results.
             </p>
           </div>
           <div class="flex items-center justify-center sm:hidden pb-48">
@@ -62,9 +62,8 @@
             </h2>
           </div>
           <div class="flex items-center justify-center sm:pt-0 pt-5">
-            <a href="#" class="rounded-full flex flex-col items-center justify-center sm:w-20 sm:h-20 w-14 h-14 sm:text-base text-xs border-2 border-white hover:bg-white hover:text-black text-center leading-none">
-              <i class="fa-solid fa-arrow-down mb-1"></i>
-              Explore<br>More
+            <a href="#portfolio" class="block w-24 h-24 sm:w-28 sm:h-28">
+              <div id="lottie-hero-btn" class=""></div>
             </a>
           </div>
         </div>
@@ -72,12 +71,12 @@
       <div class="absolute xl:-top-5 top-0 right-0 z-[-1] hidden md:block ">
         <img src="public/assets/hero-background-top-right.png" alt="" class="2xl:w-[500px] 2xl:h-[533px] xl:w-[400px] xl:h-[433px] sm:w-[300px] sm:h-[333px] w-[200px] h-[233px]">
       </div>
-      <div class="absolute sm:bottom-20 bottom-32 left-0 z-[-1]">
+      <div class="absolute sm:bottom-20 bottom-40 left-0 z-[-1]">
         <img src="public/assets/hero-background-buttom-left.png" alt="" class="xl:w-[400px] xl:h-[433px] sm:w-[300px] sm:h-[333px] w-[229px] h-[234px]">
       </div>
     </section>
     
-    <div class="absolute top-[450px] right-0 w-4/5 aspect-[1555/1267] pointer-events-none z-[-2]">
+    <div class="absolute sm:top-[450px] top-[550px] right-0 w-4/5 aspect-[1555/1267] pointer-events-none z-[-2]">
       <img src="public/assets/aksen_bg_image_right.svg" alt="" class="w-full h-full" />
     </div>
 
@@ -174,7 +173,7 @@
   </div>
 
   <!--About-->
-  <section class="py-24">
+  <section id="about" class="py-24">
     <div class="container mx-auto px-8">
       <h1 class="sm:text-7xl text-5xl text-center font-primary mb-16">About</h1>
       <div class="relative">
@@ -196,7 +195,7 @@
   </section>
 
   <!--Our Team-->
-  <section class="py-24">
+  <section id="teams" class="py-24">
     <div class="container mx-auto px-8">
       <div class="md:px-40 px-0">
         <h1 class="sm:text-7xl text-5xl font-primary text-white text-center">Our Team</h1>
@@ -247,7 +246,7 @@
   </section>
 
   <!--Contact Section-->
-  <section class="py-32 bg-cover bg-no-repeat bg-center bg-[url('../assets/bg-contact.png')]">
+  <section id="contact" class="py-32 bg-cover bg-no-repeat bg-center bg-[url('../assets/bg-contact.png')]">
     <div class="container mx-auto px-8 ">
       <div class="grid lg:grid-cols-2 items-start gap-12">
         <div class="sm:pr-40 pr-0">
@@ -308,6 +307,7 @@
       </p>
     </div>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.2/lottie.min.js"></script>
   <script src="public/js/script.js"></script>
 </body>
 </html>

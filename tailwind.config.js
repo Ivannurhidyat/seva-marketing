@@ -30,13 +30,7 @@ export default {
     // },
   },
   plugins: [
-    function ({ addUtilities }) {
-      addUtilities({
-        '.border-gradient': {
-          border: '2px solid transparent',
-          'border-image': 'linear-gradient(to right, #3b82f6, #ec4899) 1',
-        },
-      });
-    },
-  ],
+    require('tailwindcss-motion'),
+    require('tailwindcss-intersect')
+  ], 
 }
