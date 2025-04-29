@@ -1,10 +1,31 @@
  /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "./index.html",        // ⬅️ File HTML utama di root
-    "./public/**/*.js",        // ⬅️ Scan file JS jika kamu pakai class Tailwind di JS
+    "./src/**/*.{html,js}",   // kalau kamu punya HTML/JS di src
+    "./*.html",               // semua .html di root (index.html, profile.html, dst)
+    "./public/**/*.html",     // kalau ada HTML di public/
     ],
   theme: {
+    screens: {
+      sm: "540px",
+      // => @media (min-width: 576px) { ... }
+
+      md: "720px",
+      // => @media (min-width: 768px) { ... }
+
+      lg: "960px",
+      // => @media (min-width: 992px) { ... }
+
+      xl: "1140px",
+      // => @media (min-width: 1200px) { ... }
+
+      "2xl": "1320px",
+      // => @media (min-width: 1400px) { ... }
+    },
+    container: {
+      center: true,
+      padding: "16px",
+    },
     extend: {
       colors: {
         'dark': '#070607'

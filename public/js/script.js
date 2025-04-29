@@ -1,23 +1,23 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const hamburger = document.querySelector('.hamburger');
-    const menu = document.querySelector('.menu');
-    const navLinks = document.querySelectorAll('.nav-link');
+    const hamburger = document.querySelector(".hamburger");
+    const menu = document.querySelector(".menu");
+    const navLinks = document.querySelectorAll(".nav-link");
     const sections = document.querySelectorAll("section[id]");
     const body = document.body;
 
     // Toggle Menu
-    hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('is-active');
-        menu.classList.toggle('menu-active');
-        body.classList.toggle('overflow-hidden');
+    hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("is-active");
+        menu.classList.toggle("menu-active");
+        body.classList.toggle("overflow-hidden");
     });
 
     // Auto close menu on link click
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            hamburger.classList.remove('is-active');
-            menu.classList.remove('menu-active');
-            body.classList.remove('overflow-hidden');
+    navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+            hamburger.classList.remove("is-active");
+            menu.classList.remove("menu-active");
+            body.classList.remove("overflow-hidden");
         });
     });
 
@@ -30,10 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const sectionTop = section.offsetTop;
             const sectionHeight = section.offsetHeight;
 
-            if (
-                scrollPos >= sectionTop &&
-                scrollPos < sectionTop + sectionHeight
-            ) {
+            if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
                 current = section.getAttribute("id");
             }
 
