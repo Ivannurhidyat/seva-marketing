@@ -1,9 +1,10 @@
  /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "./src/**/*.{html,js}",   // kalau kamu punya HTML/JS di src
-    "./*.html",               // semua .html di root (index.html, profile.html, dst)
-    "./public/**/*.html",     // kalau ada HTML di public/
+    "./src/**/*.{html,js}",
+    "./*.html",
+    "./public/**/*.html",
+    "./public/js/**/*.js",
     ],
   theme: {
     screens: {

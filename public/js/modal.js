@@ -1,31 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // … kode lain …
-
-  // ==== Modal untuk semua .card ====
   const modal      = document.getElementById('modal');
-  const modalImg   = document.getElementById('modalImg');
-  const modalTitle = document.getElementById('modalTitle');
-  const modalDesc  = document.getElementById('modalDesc');
   const closeBtn   = document.getElementById('modalClose');
   const body       = document.body;
+  // const titleEl    = document.getElementById('modalTitle');
+  const readBtns   = document.querySelectorAll('.read-more');
 
-  document.querySelectorAll('.card').forEach(card => {
-    card.style.cursor = 'pointer'; // pastikan pointer
-    card.addEventListener('click', () => {
-      const imgEl  = card.querySelector('img');
-      // cari judul di H3 atau H4
-      const titleEl = card.querySelector('h3') || card.querySelector('h4');
-      const descEl  = card.querySelector('p');
-
-      if (!imgEl || !titleEl || !descEl) return;
-
-      // set data ke modal
-      modalImg.src           = imgEl.src;
-      modalImg.alt           = imgEl.alt || titleEl.textContent;
-      modalTitle.textContent = titleEl.textContent;
-      modalDesc.textContent  = descEl.textContent;
-
-      // tampilkan & lock scroll belakang
+  readBtns.forEach(btn => {
+    btn.addEventListener('click', e => {
+      e.preventDefault();
+      const card = e.currentTarget.closest('.card');
+      const t = card.querySelector('h3') || card.querySelector('h4');
+      // titleEl.textContent = t.textContent;
       modal.classList.remove('hidden');
       body.classList.add('overflow-hidden');
     });
@@ -35,15 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     modal.classList.add('hidden');
     body.classList.remove('overflow-hidden');
   }
-
   closeBtn.addEventListener('click', closeModal);
-  modal.addEventListener('click', e => {
-    if (e.target === modal) closeModal();
-  });
-  document.addEventListener('keydown', e => {
-    if (e.key === 'Escape') closeModal();
-  });
-  // ==== end modal ====
-
-  // … kode lain …
+  modal.addEventListener('click', e => e.target === modal && closeModal());
+  document.addEventListener('keydown', e => e.key==='Escape' && closeModal());
 });

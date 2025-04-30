@@ -58,6 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function goToPage(page) {
     currentPage = page;
     renderPage(page);
+    // tidak ada scroll di sini
   }
 
   prevBtn.addEventListener('click', () => goToPage(currentPage - 1));

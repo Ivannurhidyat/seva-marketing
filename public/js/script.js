@@ -4,6 +4,26 @@ document.addEventListener("DOMContentLoaded", () => {
     const navLinks = document.querySelectorAll(".nav-link");
     const sections = document.querySelectorAll("section[id]");
     const body = document.body;
+    const header = document.getElementById("header");
+
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 0) {
+            // scroll ke bawah:
+            header.classList.remove('bg-dark', 'shadow-md');
+            header.classList.add(
+                'bg-dark/80',       // 80% opacity
+                'backdrop-blur-sm', // efek blur
+            );
+        } else {
+            // di paling atas:
+            header.classList.remove(
+                'bg-dark/80',
+                'backdrop-blur-sm',
+            );
+            header.classList.add('bg-dark', 'shadow-md');
+        }
+    });
 
     // Toggle Menu
     hamburger.addEventListener("click", () => {
