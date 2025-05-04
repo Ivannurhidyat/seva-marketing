@@ -12,7 +12,7 @@
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!--Scrolling Animation-->
-  <link rel="stylesheet" href="public/css/animate.css" />
+  <link rel="stylesheet" href="public/css//animate.min.css" />
   <!--Css-->
   <link rel="stylesheet" href="public/css/style.css" />
   <!--Fonts-->
@@ -35,7 +35,8 @@
   <header id="header" class="sticky top-0 bg-dark z-40 transition-all">
     <nav class="container flex flex-wrap items-center px-8">
       <div class="logo md:z-auto z-50">
-        <a href="#" class="block navbar py-7"><img src="public/assets/logo.svg" class="lg:w-[162px] lg:h-[60px] w-[145px] h-[50px]" alt="" /></a>
+        <a href="#" class="block navbar py-7"><img src="public/assets/logo.svg"
+            class="lg:w-[162px] lg:h-[60px] w-[145px] h-[50px]" alt="" /></a>
       </div>
       <ul
         class="menu flex flex-1 lg:justify-end justify-center items-center lg:gap-12 2xl:gap-14 text-white uppercase text-base absolute lg:static top-0 z-20 left-0 flex-col lg:flex-row lg:w-auto w-full lg:min-h-0 min-h-screen bg-dark lg:bg-transparent divide-dark divide-y-2 lg:divide-y-0 space-y-7 lg:space-y-0">
@@ -69,7 +70,8 @@
     <section class="hero relative sm:h-screen sm:py-16 py-10">
       <div class="container px-8  items-center">
         <div>
-          <div class="items-start xl:w-2/5 lg:w-1/2 md:w-4/6 sm:w-4/5 w-auto xl:pb-6 sm:pb-14 pb-10 wow fadeInRight" data-wow-delay=".2s">
+          <div class="items-start xl:w-2/5 lg:w-1/2 md:w-4/6 sm:w-4/5 w-auto xl:pb-6 sm:pb-14 pb-10 wow fadeInRight"
+            data-wow-delay=".2s">
             <p class="sm:text-lg text-base">
               We
               <strong><u><i>accelerate</i></u></strong>
@@ -81,7 +83,11 @@
             </p>
           </div>
           <div class="flex items-center justify-center sm:hidden pb-48 wow fadeInUp" data-wow-delay=".3s">
-            <img src="public/assets/hero-image.png" alt="" />
+            <picture>
+              <source srcset="public/assets/hero-image.webp" type="image/webp" />
+              <img src="public/assets/hero-image.png" alt="Hero Seva Marketing" width="658" height="279" loading="lazy"
+                decoding="async" />
+            </picture>
           </div>
           <div
             class="hidden tracking-wider sm:block items-center 2xl:mb-32 xl:mb-16 mb-24 font-primary font-bold lg:text-8xl sm:text-7xl text-4xl">
@@ -95,22 +101,26 @@
               </i>
             </h2>
           </div>
-          <div class="flex items-center justify-center sm:pt-0 pt-5 wow fadeInUp"
-          data-wow-delay=".3s">
+          <div class="flex items-center justify-center sm:pt-0 pt-5 wow fadeInUp" data-wow-delay=".3s">
             <a href="#portfolio" class="block w-24 h-24 sm:w-28 sm:h-28">
               <div id="lottie-hero-btn" class=""></div>
             </a>
           </div>
         </div>
       </div>
-      <div class="absolute xl:-top-5 top-0 right-0 z-[-1] hidden md:block" data-aos="fade-up"
-        >
-        <img src="public/assets/hero-background-top-right.png" alt=""
-          class="2xl:w-[500px] 2xl:h-[533px] xl:w-[400px] xl:h-[433px] sm:w-[300px] sm:h-[333px] w-[200px] h-[233px]" />
+      <div class="absolute xl:-top-5 top-0 right-0 z-[-1] hidden md:block wow fadeInUp">
+        <picture>
+          <source srcset="public/assets/hero-background-top-right.webp" type="image/webp" class="2xl:w-[500px] 2xl:h-[533px] xl:w-[400px] xl:h-[433px] sm:w-[300px] sm:h-[333px] w-[200px] h-[233px]"/>
+          <img src="public/assets/hero-background-top-right.png" alt=""
+          class="2xl:w-[500px] 2xl:h-[533px] xl:w-[400px] xl:h-[433px] sm:w-[300px] sm:h-[333px] w-[200px] h-[233px]" width="500" height="533"/>
+        </picture>
       </div>
-      <div class="absolute sm:bottom-20 bottom-40 left-0 z-[-1]" >
-        <img src="public/assets/hero-background-buttom-left.png" alt=""
-          class="xl:w-[400px] xl:h-[433px] sm:w-[300px] sm:h-[333px] w-[229px] h-[234px]" />
+      <div class="absolute sm:bottom-20 bottom-40 left-0 z-[-1] wow fadeInDown">
+        <picture>
+          <source srcset="public/assets/hero-background-buttom-left.webp" type="image/webp" class="xl:w-[400px] xl:h-[433px] sm:w-[300px] sm:h-[333px] w-[229px] h-[234px]"/>
+          <img src="public/assets/hero-background-buttom-left.png" alt=""
+          class="xl:w-[400px] xl:h-[433px] sm:w-[300px] sm:h-[333px] w-[229px] h-[234px]" width="400" height="433"/>
+        </picture>
       </div>
     </section>
 
@@ -127,13 +137,18 @@
         <div class="">
           <div class="relative">
             <div class="gap-5 columns-1 lg:columns-3 md:columns-2 space-y-5">
-              <div class="card relative group overflow-hidden justify-center items-center wow fadeInUp" data-wow-delay=".2s">
-                <img
+              <div class="card relative group overflow-hidden justify-center items-center wow fadeInUp"
+                data-wow-delay=".2s">
+                <picture>
+                  <source srcset="public/assets/image-profile-1.webp" type="image/webp" class="w-full lg:h-[425px] object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"/>
+                  <img
                   class="w-full lg:h-[425px] object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
-                  src="public/assets/image-profile-1.png" alt="" />
+                  src="public/assets/image-profile-1.png" alt="" loading="lazy" width="405" height="425"/>
+                </picture>
                 <div
                   class="absolute inset-0 bg-gradient-image-card bg-opacity-80 text-white xl:px-16 xl:py-16 lg:px-10 lg:py-10 sm:px-12 sm:py-12 px-6 py-8 flex flex-col justify-center transition-all duration-500 translate-y-[101%] group-hover:translate-y-0 sm:space-y-7 space-y-4">
-                  <h4 class="2xl:text-4xl lg:text-3xl md:text-4xl sm:text-5xl text-3xl font-bold font-primary text-left">
+                  <h4
+                    class="2xl:text-4xl lg:text-3xl md:text-4xl sm:text-5xl text-3xl font-bold font-primary text-left">
                     Harvest Kingdom 1
                   </h4>
                   <p class="2xl:text-lg md:text-base sm:text-xl text-sm text-left leading-relaxed">
@@ -147,13 +162,18 @@
                   </a>
                 </div>
               </div>
-              <div class="card relative group overflow-hidden justify-center items-center wow fadeInUp" data-wow-delay=".2s">
-                <img
+              <div class="card relative group overflow-hidden justify-center items-center wow fadeInUp"
+                data-wow-delay=".2s">
+                <picture>
+                  <source srcset="public/assets/image-profile-2.webp" type="image/webp" class="w-full lg:h-[710px] object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"/>
+                  <img
                   class="w-full lg:h-[710px] object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
-                  src="public/assets/image-profile-2.png" alt="" />
+                  src="public/assets/image-profile-2.png" alt="" loading="lazy" width="405" height="710"/>
+                </picture>
                 <div
                   class="absolute inset-0 bg-gradient-image-card bg-opacity-80 text-white xl:px-16 xl:py-16 lg:px-10 lg:py-10 sm:px-12 sm:py-12 px-6 py-8 flex flex-col justify-center transition-all duration-500 translate-y-[101%] group-hover:translate-y-0 sm:space-y-7 space-y-4">
-                  <h4 class="2xl:text-4xl lg:text-3xl md:text-4xl sm:text-5xl text-3xl font-bold font-primary text-left">
+                  <h4
+                    class="2xl:text-4xl lg:text-3xl md:text-4xl sm:text-5xl text-3xl font-bold font-primary text-left">
                     Harvest Kingdom 2
                   </h4>
                   <p class="2xl:text-lg md:text-base sm:text-xl text-sm text-left leading-relaxed">
@@ -167,13 +187,18 @@
                   </a>
                 </div>
               </div>
-              <div class="card relative group overflow-hidden justify-center items-center wow fadeInUp" data-wow-delay=".2s">
-                <img
+              <div class="card relative group overflow-hidden justify-center items-center wow fadeInUp"
+                data-wow-delay=".2s">
+                <picture>
+                  <source srcset="public/assets/image-profile-3.webp" type="image/webp" class="w-full lg:h-[439px] object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"/>
+                  <img
                   class="w-full lg:h-[439px] object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
-                  src="public/assets/image-profile-3.png" alt="" />
+                  src="public/assets/image-profile-3.png" alt="" loading="lazy" width="405" height="439"/>
+                </picture>
                 <div
                   class="absolute inset-0 bg-gradient-image-card bg-opacity-80 text-white xl:px-16 xl:py-16 lg:px-10 lg:py-10 sm:px-12 sm:py-12 px-6 py-8 flex flex-col justify-center transition-all duration-500 translate-y-[101%] group-hover:translate-y-0 sm:space-y-7 space-y-4">
-                  <h4 class="2xl:text-4xl lg:text-3xl md:text-4xl sm:text-5xl text-3xl font-bold font-primary text-left">
+                  <h4
+                    class="2xl:text-4xl lg:text-3xl md:text-4xl sm:text-5xl text-3xl font-bold font-primary text-left">
                     Harvest Kingdom 3
                   </h4>
                   <p class="2xl:text-lg md:text-base sm:text-xl text-sm text-left leading-relaxed">
@@ -187,13 +212,18 @@
                   </a>
                 </div>
               </div>
-              <div class="card relative group overflow-hidden justify-center items-center wow fadeInUp" data-wow-delay=".2s">
-                <img
+              <div class="card relative group overflow-hidden justify-center items-center wow fadeInUp"
+                data-wow-delay=".2s">
+                <picture>
+                  <source srcset="public/assets/image-profile-6.webp" type="image/webp" class="w-full lg:h-[692px] object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"/>
+                  <img
                   class="w-full lg:h-[692px] object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
-                  src="public/assets/image-profile-6.png" alt="" />
+                  src="public/assets/image-profile-6.png" alt="" loading="lazy" width="405" height="692"/>
+                </picture>
                 <div
                   class="absolute inset-0 bg-gradient-image-card bg-opacity-80 text-white xl:px-16 xl:py-16 lg:px-10 lg:py-10 sm:px-12 sm:py-12 px-6 py-8 flex flex-col justify-center transition-all duration-500 translate-y-[101%] group-hover:translate-y-0 sm:space-y-7 space-y-4">
-                  <h4 class="2xl:text-4xl lg:text-3xl md:text-4xl sm:text-5xl text-3xl font-bold font-primary text-left">
+                  <h4
+                    class="2xl:text-4xl lg:text-3xl md:text-4xl sm:text-5xl text-3xl font-bold font-primary text-left">
                     Harvest Kingdom 4
                   </h4>
                   <p class="2xl:text-lg md:text-base sm:text-xl text-sm text-left leading-relaxed">
@@ -207,13 +237,18 @@
                   </a>
                 </div>
               </div>
-              <div class="card relative group overflow-hidden justify-center items-center wow fadeInUp" data-wow-delay=".2s">
-                <img
+              <div class="card relative group overflow-hidden justify-center items-center wow fadeInUp"
+                data-wow-delay=".2s">
+                <picture>
+                  <source srcset="public/assets/image-profile-5.webp" type="image/webp" class="w-full lg:h-[574px] object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"/>
+                  <img
                   class="w-full lg:h-[574px] object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
-                  src="public/assets/image-profile-5.png" alt="" />
+                  src="public/assets/image-profile-5.png" alt="" loading="lazy" width="405" height="574"/>
+                </picture>
                 <div
                   class="absolute inset-0 bg-gradient-image-card bg-opacity-80 text-white xl:px-16 xl:py-16 lg:px-10 lg:py-10 sm:px-12 sm:py-12 px-6 py-8 flex flex-col justify-center transition-all duration-500 translate-y-[101%] group-hover:translate-y-0 sm:space-y-7 space-y-4">
-                  <h4 class="2xl:text-4xl lg:text-3xl md:text-4xl sm:text-5xl text-3xl font-bold font-primary text-left">
+                  <h4
+                    class="2xl:text-4xl lg:text-3xl md:text-4xl sm:text-5xl text-3xl font-bold font-primary text-left">
                     Harvest Kingdom 5
                   </h4>
                   <p class="2xl:text-lg md:text-base sm:text-xl text-sm text-left leading-relaxed">
@@ -227,13 +262,18 @@
                   </a>
                 </div>
               </div>
-              <div class="card relative group overflow-hidden justify-center items-center wow fadeInUp" data-wow-delay=".2s">
-                <img
+              <div class="card relative group overflow-hidden justify-center items-center wow fadeInUp"
+                data-wow-delay=".2s">
+                <picture>
+                  <source srcset="public/assets/image-profile-4.webp" type="image/webp" class="w-full lg:h-[563px] object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"/>
+                  <img
                   class="w-full lg:h-[563px] object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
-                  src="public/assets/image-profile-4.png" alt="" />
+                  src="public/assets/image-profile-4.png" alt="" loading="lazy" width="405" height="563"/>
+                </picture>
                 <div
                   class="absolute inset-0 bg-gradient-image-card bg-opacity-80 text-white xl:px-16 xl:py-16 lg:px-10 lg:py-10 sm:px-12 sm:py-12 px-6 py-8 flex flex-col justify-center transition-all duration-500 translate-y-[101%] group-hover:translate-y-0 sm:space-y-7 space-y-4">
-                  <h4 class="2xl:text-4xl lg:text-3xl md:text-4xl sm:text-5xl text-3xl font-bold font-primary text-left">
+                  <h4
+                    class="2xl:text-4xl lg:text-3xl md:text-4xl sm:text-5xl text-3xl font-bold font-primary text-left">
                     Harvest Kingdom 6
                   </h4>
                   <p class="2xl:text-lg md:text-base sm:text-xl text-sm text-left leading-relaxed">
@@ -249,10 +289,11 @@
               </div>
             </div>
             <div class="flex items-center justify-center mt-10 wow fadeInUp" data-wow-delay=".2s">
-              <a href="portfolio.html" class="border-2 border-white border-solid w-fit md:px-5 md:py-3 px-5 py-3 lg:text-lg text-base rounded-full text-white hover:bg-white hover:text-black transition">
+              <a href="portfolio.html"
+                class="border-2 border-white border-solid w-fit md:px-5 md:py-3 px-5 py-3 lg:text-lg text-base rounded-full text-white hover:bg-white hover:text-black transition">
                 See All Projects
               </a>
-            </div>  
+            </div>
           </div>
         </div>
       </div>
@@ -272,7 +313,8 @@
       <div class="relative">
         <div class="container flex flex-col lg:flex-row gap-x-5 lx:px-32">
           <div
-            class="flex basis-1/2 flex-col items-center lg:items-start text-xl font-secondry text-white leading-relaxed lg:space-y-10 space-y-5 lg:pt-20 lg:text-left text-center lg:mb-auto mb-14 wow fadeInRight" data-wow-delay=".2s">
+            class="flex basis-1/2 flex-col items-center lg:items-start text-xl font-secondry text-white leading-relaxed lg:space-y-10 space-y-5 lg:pt-20 lg:text-left text-center lg:mb-auto mb-14 wow fadeInRight"
+            data-wow-delay=".2s">
             <p>
               We create stunning Lorem ipsum dolor sit amet, consectetur
               adipiscing elit.We create stunning Lorem ipsum dolor sit amet,
@@ -285,7 +327,11 @@
             </p>
           </div>
           <div class="flex basis-7/12 lg:justify-end justify-center z-10 wow fadeInLeft" data-wow-delay=".2s">
-            <img src="public/assets/image-about.png" class="lg:w-[500px] lg:h-[650px] w-full" alt="image-about-section" />
+            <picture>
+              <source srcset="public/assets/image-about.webp" type="image/webp" class="lg:w-[500px] lg:h-[650px] w-full"/>
+              <img src="public/assets/image-about.png" class="lg:w-[500px] lg:h-[650px] w-full"
+              alt="image-about-section" width="1337" height="1613" loading="lazy" decoding="async"/>
+            </picture>
           </div>
         </div>
       </div>
@@ -306,13 +352,14 @@
           consectetur adipiscing elit.
         </p>
       </div>
-      <div class="relative mt-12 flex lg:flex-row flex-col lg:gap-20 gap-10 items-center justify-center wow fadeInUp" data-wow-delay=".2s">
+      <div class="relative mt-12 flex lg:flex-row flex-col lg:gap-20 gap-10 items-center justify-center wow fadeInUp"
+        data-wow-delay=".2s">
         <!--Team List-->
         <div class="flex flex-col lg:gap-20 gap-10">
           <div class="justify-items-center lg:justify-items-stretch">
             <div class="flex flex-col bg-[#181818] shadow-sm md:flex-row md:max-w-3xl max-w-sm">
               <img class="object-cover xl:h-[237px] h-[215px] md:w-[219px] w-full" src="public/assets/profile-team.png"
-                alt="profile-team" />
+              alt="profile-team" width="655" height="619" loading="lazy" decoding="async"/>
               <div class="flex flex-col justify-between p-5 leading-normal">
                 <h5 class="xl:text-3xl text-2xl font-bold tracking-tight text-white">
                   “Amazing Team with Lorem Ipsum”
@@ -329,7 +376,7 @@
           <div class="justify-items-center lg:justify-items-stretch">
             <div class="flex flex-col bg-[#181818] shadow-sm md:flex-row md:max-w-3xl max-w-sm">
               <img class="object-cover xl:h-[237px] h-[215px] md:w-[219px] w-full" src="public/assets/profile-team.png"
-                alt="profile-team" />
+              alt="profile-team" width="655" height="619" loading="lazy" decoding="async"/>
               <div class="flex flex-col justify-between p-5 leading-normal">
                 <h5 class="xl:text-3xl text-2xl font-bold tracking-tight text-white">
                   “Amazing Team with Lorem Ipsum”
@@ -436,20 +483,15 @@
       </p>
     </div>
   </footer>
-  
+
   <!-- MODAL OVERLAY -->
-  <div
-    id="modal"
-    class="hidden fixed inset-0 z-50 overflow-auto bg-white/20 backdrop-blur-sm p-4"
-  >
+  <div id="modal" class="hidden fixed inset-0 z-50 overflow-auto bg-white/20 backdrop-blur-sm p-4">
     <!-- Container untuk centering & beri margin vertikal -->
     <div class="relative w-full max-w-5xl mx-auto my-8 px-2 sm:px-4 md:px-6 lg:px-8">
       <!-- Tombol Close -->
-      <button
-        id="modalClose"
+      <button id="modalClose"
         class="absolute -top-4 -right-4 w-8 h-8 bg-white rounded-full flex items-center justify-center shadow-lg text-gray-800"
-        aria-label="Close"
-      >&times;</button>
+        aria-label="Close">&times;</button>
 
       <!-- PANEL HITAM tanpa pembatas tinggi -->
       <div class="bg-black text-white rounded-lg overflow-visible">
@@ -457,32 +499,21 @@
         <div class="p-6 lg:p-10 space-y-6">
           <div class="pb-16">
             <!-- Judul -->
-            <h2 id="modalTitle" class="text-2xl lg:text-6xl md:text-4xl leading-tight font-secondry font-extralight lg:mb-4 mb-2">
-              The Future Of Billboards: 
+            <h2 id="modalTitle"
+              class="text-2xl lg:text-6xl md:text-4xl leading-tight font-secondry font-extralight lg:mb-4 mb-2">
+              The Future Of Billboards:
             </h2>
             <h2 class="text-2xl lg:text-6xl md:text-4xl leading-tight font-secondry font-bold">
               Marketing Billboard
             </h2>
           </div>
-          
+
           <!-- GALLERY: tambahkan <img> manual di sini -->
           <div id="modalGallery" class="flex flex-col gap-10">
             <!-- contoh gambar -->
-            <img
-              src="public/assets/content-porto1.png"
-              alt=""
-              class="w-full object-cover"
-            />
-            <img
-              src="public/assets/content-porto2.png"
-              alt=""
-              class="w-full object-cover"
-            />
-            <img
-              src="public/assets/content-porto3.png"
-              alt=""
-              class="w-full object-cover"
-            />
+            <img src="public/assets/content-porto1.png" alt="" class="w-full object-cover" />
+            <img src="public/assets/content-porto2.png" alt="" class="w-full object-cover" />
+            <img src="public/assets/content-porto3.png" alt="" class="w-full object-cover" />
             <!-- dst., sebanyak yang perlu -->
           </div>
         </div>
@@ -491,7 +522,7 @@
   </div>
 
   <!-- Script -->
-  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js" defer="defer"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js" defer="defer"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.2/lottie.min.js"></script>
   <script src="public/js/script.js"></script>
   <script src="public/js/modal.js"></script>
